@@ -1,0 +1,365 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,500;1,600;1,700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+/*Start Navbar */
+#navbar {
+  padding: 0px 40px;
+}
+
+#navbar .navbar-brand img {
+  height: 45px;
+}
+#navbar .navbar {
+  padding: 5px 16px !important;
+}
+#navbar .navbar .dropdown-menu {
+  background-color: #dcdcdc;
+  display: none;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  top: 45px;
+  left: -385px;
+}
+#navbar .navbar .dropdown:hover .dropdown-menu {
+  display: block;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#navbar .navbar ul li {
+  position: relative;
+  padding: 0px 15px;
+  margin: 0px;
+}
+#navbar .navbar ul li a {
+  color: #022429 !important;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.35px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#navbar .navbar ul li a:hover {
+  color: #602d90 !important;
+}
+#navbar .navbar ul li.dropdown > a:after {
+  content: "";
+  height: 6px;
+  right: -5px;
+  position: absolute;
+  top: 17px;
+  border-style: solid;
+  border-width: 1px 1px 0 0;
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+  width: 6px;
+}
+#navbar .navbar ul .number span {
+  color: #602d90 !important;
+}
+
+#navbar .navbar ul .number i,
+#navbar .navbar ul .registration i,
+#navbar .navbar ul .login i {
+  font-size: 15px;
+}
+
+#navbar .navbar ul .registration a {
+  border: 1px solid #602d90;
+  border-radius: 4px;
+  background: transparent;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  letter-spacing: 0.25px;
+  font-size: 15px;
+  font-weight: 500;
+
+  color: #7843aa !important;
+}
+#navbar .navbar ul .registration a:hover {
+  background: #602d90;
+  color: #fff !important;
+}
+
+#navbar .navbar ul .login {
+  color: #fff;
+  background: #602d90;
+  border-radius: 4px;
+}
+#navbar .navbar ul .login span {
+  color: #fff;
+}
+
+.main_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1040px;
+  right: 200px;
+  box-shadow: -1px -15px 41px -9px rgba(255, 255, 255, 0.61);
+  -webkit-box-shadow: -1px -15px 41px -9px rgba(153, 153, 153, 0.61);
+  -moz-box-shadow: -1px -15px 41px -9px rgba(255, 255, 255, 0.61);
+}
+
+.main_item ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+.main_item ul li {
+  width: 125px;
+  padding: 0px !important;
+  margin: 0px 5px !important;
+}
+.main_item ul li a {
+  text-decoration: none;
+}
+.main_item ul li a span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main_item ul li a span i {
+  font-size: 35px;
+  color: #652d90;
+}
+.main_item ul li a span p {
+  text-transform: capitalize;
+  font-size: 13px;
+  text-align: center;
+  color: rgb(80, 80, 80);
+}
+.left {
+  padding-top: 45px;
+}
+.right {
+  background-color: #f1f3f4;
+  border-radius: 4px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+/********** Start Banner *************/
+#banner {
+  background-image: url(../images/c.svg), url(../images/banner.jpg);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 425px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-position: right 0, top left;
+  background-size: 420px, cover;
+  background-blend-mode: multiply, normal;
+  background-repeat: no-repeat;
+}
+#banner::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: -webkit-linear-gradient(left,rgba(31, 31, 31, 0.35) 30%,rgba(255, 255, 255, 0));
+  color: #fff;
+}
+.left_part {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  z-index: 99;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.left_part h1 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+  padding: 0px 110px 0px 50px;
+}
+.left_part h1 span {
+  color: #fef13e;
+}
+/************** Start Parcel ********************/
+.parcel_items {
+    overflow: hidden;
+    background: #fff;
+    top: -50px;
+    z-index: 999;
+    position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 800px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 24px -2px rgba(199, 199, 199, 0.75);
+-webkit-box-shadow: 0px 2px 24px -2px rgba(199, 199, 199, 0.75);
+-moz-box-shadow: 0px 2px 24px -2px rgba(199, 199, 199, 0.75);
+  padding: 8px;
+}
+.form_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgb(160, 160, 160);
+  border-radius: 4px;
+  padding-left: 20px;
+  position: relative;
+}
+.form_part i{
+    font-size: 22px;
+    color: rgb(158, 158, 158);
+}
+
+.form_part input,
+.form_part button {
+  border: none;
+  outline: none;
+}
+.form_part input {
+  padding: 15px;
+  width: 100%;
+}
+
+.par_btn {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  background: #56c4cf;
+  padding: 0px 30px;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ overflow: hidden;
+}
+.par_btn:before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: -webkit-linear-gradient(left, 
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.2) 0%,
+    transparent 50% );
+    top: 0;
+    bottom: 0;
+    -webkit-transform: skew(-15deg);
+        -ms-transform: skew(-15deg);
+            transform: skew(-15deg);
+    left: 90px;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+.par_btn:hover::before{
+    left: -90px;
+}
+.par_btn span{
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1.5;
+}
+.book a{
+    text-decoration: none;
+}
+.book span{
+    border: 2px solid #602D90;
+    color: #602D90;
+    background: transparent;
+    border-radius: 4px;
+    padding: 15px 28px;
+    font-weight: 600;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+.book span:hover{
+    background: #602D90;
+    color: #fff;
+}
